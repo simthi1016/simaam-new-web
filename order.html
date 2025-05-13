@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <title>ஆர்டர் பதிவு | Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffbe7;
+      padding: 30px;
+      color: #333;
+    }
+    h1 {
+      color: #388e3c;
+    }
+    form {
+      background: #f0fff4;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<center>
+<h1>🛒 உங்கள் ஆர்டரை பதிவு செய்யுங்கள்</h1>
+</center>
+
+<form action="#" method="POST">
+<label for="name">பெயர்:</label>
+  <input type="text" id="name" name="name" required>
+
+
+  <label for="product">தயாரிப்பு:</label>
+  <select id="product" name="product" required>
+    <option value="vegetables">காய்கறிகள்</option>
+    <option value="fruits">பழங்கள்</option>
+    <option value="honey">இயற்கை தேன்</option>
+  </select>
+
+  <label for="quantity">அளவு (கிலோ / லிட்டர்):</label>
+  <input type="text" id="quantity" name="quantity" required>
+
+  <label for="address">விநியோக முகவரி:</label>
+  <textarea id="address" name="address" rows="4" required></textarea>
+
+  <label for="payment">பணம் செலுத்தும் முறை:</label>
+  <select id="payment" name="payment" required>
+    <option value="cod">Cash on Delivery</option>
+    <option value="upi">UPI / ஆன்லைன்</option>
+  </select>
+
+  <button type="submit" class="btn">பதிவுசெய்</button>
+</form>
+
+</body>
+</html>
